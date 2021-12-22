@@ -1,2 +1,3 @@
-#!/usr/bin/python3
-import this
+#!/usr/bin/pytho3
+def magic_calculation(a, b):
+    return 98 + a ** b
