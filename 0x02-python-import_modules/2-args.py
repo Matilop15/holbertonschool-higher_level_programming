@@ -9,6 +9,6 @@ if __name__ == "__main__":
     elif arc == 1:
         print("1 argument:\n1: {}".format(argum[1]))
     elif arc > 0:
-            print("{:d} argments:".format(arc))
-            for a in range(1, arc + 1):
-                print("{}: {}".format(a, argum[a]))
+        print("{:d} argments:".format(arc))
+        for a in range(1, arc + 1):
+            print("{}: {}".format(a, argum[a]))
