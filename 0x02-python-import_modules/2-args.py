@@ -11,4 +11,4 @@ if __name__ == "__main__":
     elif arc > 1:
         print("{:d} argments:".format(arc))
         for a in range(1, arc + 1):
-            print("{}: {}".format(a, argum[a]))
+            print("{:d}: {:s}".format(a, argum[a]))
