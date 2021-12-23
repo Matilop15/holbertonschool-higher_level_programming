@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 import sys
 if __name__ == "__main__":
-    arc = len(sys.argv)
-    if arc == 1:
-        print("0 arguments.")
-    elif arc == 2:
-        print("1 argument:")
-        print("{:d}: {:s}".format(arc - 1, sys.argv[1]))
+    largo = len(sys.argv)
+    if largo == 1:
+        a = 'arguments.'
+    elif largo == 2:
+        a = 'argument:'
     else:
-        print("{:d} argments:".format(arc - 1))
-        for a in range(1, arc):
-            print("{:d}: {:s}".format(a, sys.argv[a]))
+        a = 'arguments:'
+    largo2 = largo - 1
+    print("{:d} {:s}".format(largo2, a))
+    for i in range(1, largo):
+        print("{:d}: {:s}".format(i, sys.argv[i]))
