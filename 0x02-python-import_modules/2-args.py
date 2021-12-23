@@ -5,7 +5,8 @@ if __name__ == "__main__":
     if arc == 1:
         print("0 arguments.")
     elif arc == 2:
-        print("1 argument:\n1: {:s}".format(sys.argv[1]))
+        print("1 argument:")
+        print("{:d}: {:s}".format(arc - 1, sys.argv[1]))
     else:
         print("{:d} argments:".format(arc - 1))
         for a in range(1, arc):
