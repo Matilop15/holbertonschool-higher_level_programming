@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-from sys import argv
 
 if __name__ == "__main__":
+    from sys import argv
     argum = argv
     arc = len(argum) - 1
     if arc == 0:
