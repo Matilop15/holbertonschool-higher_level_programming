@@ -1,18 +1,23 @@
 #!/usr/bin/python3
+"""
+a class Square that defines a square by: 4-square.py
+"""
+
 
 class Square:
-    """Square Class
+    """
+    Private instance attribute: size
+    property def size(self): to retrieve it
+    property setter def size(self, value): to set it
+    Instantiation with optional size: def __init__(self, size=0):
+    Public instance method: def area(self):
+    that returns the current square area
+    Public instance method: def my_print(self):
+    that prints in stdout the square with the character #:
+    if size is equal to 0, print an empty line
     """
 
     def __init__(self, size=0):
-        """
-        The __init__ method initializes the size value of the square.
-        Attributes:
-            size (:obj:`int`, optional): The size of the square.
-        Raises:
-            TypeError: If `size` type is not `int`.
-            ValueError: If `size` is less than `0`.
-     """
 
         self.__size = size
 
