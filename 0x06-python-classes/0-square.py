@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-empty class Scuare
+empty class Square
 """
 
 class Square:
