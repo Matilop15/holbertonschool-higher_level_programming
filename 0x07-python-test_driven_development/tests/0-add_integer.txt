@@ -1,0 +1,92 @@
+0-Integer addition module
+================
+
+import module:
+	>>> add_integer = __import__('0-add_integer').add_integer
+	
+	>>> import sys
+
+===============
+TEST
+-------------
+Case #0: a es float
+	
+	>>> add_integer(12.2)
+	110
+
+Case #1: a es la var hola
+
+	>>> add_integer(hola)
+	Traceback (most recent call last):
+	NameError: name 'hola' is not defined
+
+Case #2: b es la var hola
+
+	>>> add_integer(2, hola)
+	Traceback (most recent call last):
+	NameError: name 'hola' is not defined
+
+Case #3: b esta vacio
+
+	>>> add_integer(1, )
+	99
+
+Case #4: a x10^2
+
+	>>> add_integer(12e2)
+	1298
+
+Case #5: a es None
+
+	>>> add_integer(None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+Case #6: b es None
+	
+	>>> add_integer(2, None)
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+Case #7: a es una str
+
+	>>> add_integer("hola")
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+Case #8: b es una str
+
+	>>> add_integer(0, "hola")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+Case #8: sumando maxsize
+
+	>>> add_integer(sys.maxsize, sys.maxsize)
+	18446744073709551614
+
+Case #9: error en uno de los valore, y que justo de la casualidad de hacer otro numerito
+
+	>>> add_integer(10.3, 10,5)
+	Traceback (most recent call last):
+	TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+Caso #10: suma de dos float
+
+	>>> add_integer(10.9, 10.5)
+	20
+
+Caso #11: negatiivo + positivo da 0
+
+	>>> add_integer(-10, 10)
+	0
+
+Caso #12: suma de dos negativos
+
+	>>> add_integer(-10, -10)
+	-20
+
+Caso #13: a elevado a un exponente negativo
+
+	>>> add_integer(12e-2)
+	98
