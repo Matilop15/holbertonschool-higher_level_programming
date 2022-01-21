@@ -48,3 +48,6 @@ $./0-main.py
 | `4-print_square.py` <br /> `4-print_square.txt`| [4-print_square.py](4-print_square.py)<br /> [4-print_square.txt](tests/4-print_square.txt) | Write a function that prints a square with the character #.
 | `5-text_indentation.py` <br /> `5-text_indentation.txt`| [5-text_indentation.py](5-text_indentation.py) <br /> [5-text_indentation.txt](tests/5-text_indentation.txt) |  Write a function that prints a text with 2 new lines after each of these characters: ., ? and :
 | `6-max_integer_test.py` | [6-max_integer_test.py](tests/6-max_integer_test.py) | write unittests for the function def max_integer(list=[]).
+
+## Author
+Matias López - [Linkedin - Matias López] (https://uy.linkedin.com/in/matias-l%C3%B3pez-777796194?trk=people-guest_people_search-card)
