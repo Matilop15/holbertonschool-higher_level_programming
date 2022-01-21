@@ -1,4 +1,4 @@
-<img src="https://blog.holbertonschool.com/wp-content/uploads/2020/04/unnamed-2.png" width="150" height="210">
+<img src="https://blog.holbertonschool.com/wp-content/uploads/2020/04/unnamed-2.png" width="170" height="210">
 
 # 0x07. Python - Test-driven development
 Higher-level programming ― Python
