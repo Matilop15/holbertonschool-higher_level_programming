@@ -90,3 +90,15 @@ Caso #13: a elevado a un exponente negativo
 
 	>>> add_integer(12e-2)
 	98
+
+Caso #14: a elevado enormemente
+
+	>>> add_integer(2e310)
+	Traceback (most recent call last):	
+	OverflowError: cannot convert float infinity to integer
+
+Case #15: a [13, 12]
+
+	>>> add_integer([13, 12], 12)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
