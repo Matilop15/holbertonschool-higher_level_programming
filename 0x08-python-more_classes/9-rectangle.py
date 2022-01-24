@@ -92,7 +92,7 @@ class Rectangle:
         if rect_1.area() < rect_2.area():
             return rect_2
 
-    @staticmethod
+    @classmethod
     def square(cls, size=0):
         ''' return a new rectangle'''
-        return Rectangle(cls, cls)
+        return cls(size, size)
