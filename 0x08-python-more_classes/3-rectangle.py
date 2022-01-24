@@ -53,6 +53,7 @@ class Rectangle:
         return self.__width * 2 + self.__height * 2
 
     def __str__(self):
+        '''return a rectangle'''
         rect = ""
         if 0 in [self.__width, self.__height]:
             return rect
