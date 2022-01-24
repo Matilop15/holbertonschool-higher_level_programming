@@ -6,6 +6,8 @@ a class Rectangle that defines a rectangle by: (based on 1-rectangle)
 
 
 class Rectangle:
+    '''Rectangle class defined by width and height'''
+
     def __init__(self, width=0, height=0):
         '''calculate area and perimeter of rectangle'''
         self.height = height
