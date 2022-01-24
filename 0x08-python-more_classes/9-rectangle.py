@@ -96,4 +96,4 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         ''' return a new rectangle'''
-        return(Rectangle(size, size))
+        return Rectangle(cls, cls)
