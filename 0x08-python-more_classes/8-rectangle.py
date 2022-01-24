@@ -58,7 +58,7 @@ class Rectangle:
 
     def __str__(self):
         '''return a rectangle'''
-	rect = ""
+        rect = ""
         if 0 in [self.__width, self.__height]:
             return rect
         for i in range(self.__height):
@@ -76,11 +76,19 @@ class Rectangle:
         return 'Rectangle(' + w + ', ' + h + ')'
 
     def __del__(self):
-	'''if is del print a mensaje and resta una instancia '''
+        '''if is del print a mensaje and resta una instancia '''
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
-	@staticmethod
-	def bigger_or_equal(rect_1, rect_2):
-	'''compare rect1 and rect 2 '''
-	if 	
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        '''compare rect1 and rect 2 '''
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+
+        if rect_1.area() == rect_2.area() or rect_1.area() > rect_2.area():
+            return rect_1
+        if rect_1.area() < rect_2.area():
+            return rect_2
