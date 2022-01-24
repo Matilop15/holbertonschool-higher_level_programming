@@ -70,9 +70,8 @@ class Rectangle:
 
     def __repr__(self):
         '''Returns the representation the Rectangle'''
-        w = str(eval("self.width"))
-        h = str(eval("self.height"))
-
+        return ("Rectangle(" + str(self.__width) +
+                ", " + str(self.__height) + ")")
         return 'Rectangle(' + w + ', ' + h + ')'
 
     def __del__(self):
