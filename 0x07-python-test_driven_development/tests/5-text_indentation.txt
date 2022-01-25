@@ -1,0 +1,55 @@
+5-text_indentation
+===================
+
+import module:
+	
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+==================
+TEST
+------------------
+
+Case #0: empty str
+
+	>>> text_indentation()
+	Traceback (most recent call last):
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Case #1: only delim
+
+	>>> text_indentation(":?.")
+	:
+	<BLANKLINE>
+	?
+	<BLANKLINE>	
+	.
+	<BLANKLINE>
+
+Case #2: finish ?
+
+	>>> text_indentation("How are you?")
+	How are you?
+	<BLANKLINE>
+
+Case #3: None
+
+	>>> text_indentation(None)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+Case #4: int
+
+	>>> text_indentation(23)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+Case #5: space in the begining
+
+	>>> text_indentation("  hola loram holbertonscuhusjdasdsad ad ssjktior osaldask dejfeim")
+	hola loram holbertonscuhusjdasdsad ad ssjktior osaldask dejfeim
+
+
+Case #6: tab in the begining
+
+	>>> text_indentation("	Hello, my name is Matias")
+	Hello, my name is Matias

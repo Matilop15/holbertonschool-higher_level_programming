@@ -1,0 +1,58 @@
+4-print_square
+================
+
+import module:
+
+	>>> print_square = __import__('4-print_square').print_square
+
+===============
+TEST
+---------------
+
+Case #0: size is a str
+
+	>>> print_square("hola")
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+Case #1: size is negative
+
+	>>> print_square(-4)
+	Traceback (most recent call last):
+	ValueError: size must be >= 0
+
+Case #2: size is float
+
+	>>> print_square(3.4)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+Case #3: size is expoente
+
+	>>> print_square(2e2)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+Case #4: size is None
+
+	>>> print_square(None)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+Case #5: two sizes
+
+	>>> print_square(2, 3)
+	Traceback (most recent call last):
+	TypeError: print_square() takes 1 positional argument but 2 were given
+
+Case #6: empty
+
+	>>> print_square()
+	Traceback (most recent call last):
+	TypeError: print_square() missing 1 required positional argument: 'size'
+
+Case #7: numers and letters
+
+	>>> print_Square(3t3)
+	Traceback (most recent call last):
+	SyntaxError: invalid syntax

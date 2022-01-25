@@ -102,3 +102,9 @@ Case #15: a [13, 12]
 	>>> add_integer([13, 12], 12)
 	Traceback (most recent call last):
 	TypeError: a must be an integer
+
+Case #16: number and letter
+
+	>>> add_integer(3g4)
+	Traceback (most recent call last):
+	SyntaxError: invalid syntax
