@@ -72,6 +72,7 @@ or
 - 26-answer.txt
 - 27-answer.txt
 - 28-answer.txt
+- 100-magic__string.py
 
 ## Author
 Matias López - [Linkedin: @Matias López](https://uy.linkedin.com/in/matias-l%C3%B3pez-777796194?trk=people-guest_people_search-card)
