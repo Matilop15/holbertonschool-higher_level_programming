@@ -70,3 +70,9 @@ Case #10: matrix with negative numbers and exponencial numbers
 
 	>>> matrix_divided([[-34, -3e-4], [-2e4, -1]], 2)
 	[[-17.0, -0.0], [-10000.0, -0.5]]
+
+Case #11: :D
+
+	>>> matrix_divided([[-34, "9"], [12, 3]])
+	Traceback (most recent call last):
+	TypeError: matrix_divided() missing 1 required positional argument: 'div'
