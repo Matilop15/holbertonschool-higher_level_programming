@@ -73,6 +73,6 @@ Case #10: matrix with negative numbers and exponencial numbers
 
 Case #11: :D
 
-	>>> matrix_divided([[-34, "9"], [12, 3]])
+	>>> matrix_divided([[34, "9"], [12, 3]] / 3)
 	Traceback (most recent call last):
-	TypeError: matrix_divided() missing 1 required positional argument: 'div'
+	TypeError: unsupported operand type(s) for /: 'list' and 'int'
