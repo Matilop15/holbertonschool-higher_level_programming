@@ -16,7 +16,7 @@ class Square(Rectangle):
         """validar si es un integer y retornar area"""
         self.__size = size
         self.integer_validator("size", size)
-        super().__init__(size, size) 
+        super().__init__(size, size)
         """super sirve para modificar en la clase padre"""
 
     def __str__(self):
