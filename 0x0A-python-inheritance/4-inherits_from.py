@@ -4,8 +4,6 @@ A function that returns True if the object is an instance
 """
 
 
-
-
 def inherits_from(obj, a_class):
     """
     inherits_from: Check if is inherited for specificed class
