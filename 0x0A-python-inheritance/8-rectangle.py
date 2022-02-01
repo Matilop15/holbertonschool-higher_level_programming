@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# Matias López <3959@holbertonschool.com>
 """
 8-rectangle.py
 a class Rectangle that inherits from BaseGeometry (7-base_geometry.py)
