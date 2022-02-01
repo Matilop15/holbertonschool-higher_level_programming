@@ -37,7 +37,7 @@ or
 
 - [0-read_file.py](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0B-python-input_output/0-read_file.py)
 - [1-write_file.py](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0B-python-input_output/1-write_file.py)
-- [2-append_write.py](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0B-python-input_output/2-append_write.py])
+- [2-append_write.py](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0B-python-input_output/2-append_write.py)
 - [3-to_json_string.py](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0B-python-input_output/3-to_json_string.py)
 - [4-from_json_string.py](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0B-python-input_output/4-from_json_string.py)
 - [5-save_to_json_file.py](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0B-python-input_output/5-save_to_json_file.py)
