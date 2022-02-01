@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# Matias López <3959@holbertonschool.com>
 """
 A function that returns True if the object is an instance
 of a class that inherited (directly or indirectly)
