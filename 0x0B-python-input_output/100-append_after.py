@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+# Matias López <3959@holbertonschool.com>
+"""
+12-append_after.py
+a function that inserts a line of text to a file,
+after each line containing a specific string
+"""
 
 
 def append_after(filename="", search_string="", new_string=""):
