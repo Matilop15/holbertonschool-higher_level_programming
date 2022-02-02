@@ -27,13 +27,12 @@ class Student:
             for x in attrs:
                 if x in self.__dict__:
                     my_dict.update({x: self.__dict__[x]})
-                    return my_dict
-            return self.__dict__.copy()
+            return my_dict
+        return self.__dict__.copy()
 
     def reload_from_json(self, json):
         """
         Replaces all attributes of the Student instance.
         """
-
         for x in json:
             self.__dict__.update({x: json[x]})
