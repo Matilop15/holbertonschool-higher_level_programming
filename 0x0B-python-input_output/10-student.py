@@ -18,12 +18,14 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """return only attribute"""
-        if attrs is not None and all(isinstance(item, str) for item in attrs):
-            ret = {}
-            for p, r in self.__dict__.items():
-                if p in attrs:
-                    ret[p] = r
-                    return ret
-        else:
-            return self.__dict__
+        """dictionary representation
+        attrs: list of attributes
+        return: dict representation of instance
+        """
+        my_dict = dict()
+        if type(attrs) is list and all(type(x) is str for x in attrs):
+            for x in attrs:
+                if x in self.__dict__:
+                    my_dict.update({x: self.__dict__[x]})
+            return my_dict
+        return self.__dict__.copy()
