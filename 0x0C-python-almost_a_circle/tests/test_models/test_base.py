@@ -5,14 +5,39 @@ Test for base.py
 
 import unittest
 
+import pycodestyle
+
 from models.base import Base
 
 
 class test_case(unittest.TestCase):
     """holberton"""
+
+    def test_pep8_base(self):
+        """
+        Test that checks PEP8
+        """
+        syntax = pycodestyle.StyleGuide(quit=True)
+        check = syntax.check_files(['models/base.py'])
+        self.assertEqual(
+            check.total_errors, 0,
+            "Pycodestyle errors found in base.py"
+        )
+
+    def test_pep8_base2(self):
+        """
+        Test that checks PEP8
+        """
+        syntax = pycodestyle.StyleGuide(quit=True)
+        check = syntax.check_files(['tests/test_models/test_base.py'])
+        self.assertEqual(
+            check.total_errors, 0,
+            "Pycodestyle errors found in test_base.py"
+        )
+
     def setUp(self):
         Base._Base__nb_objects = 0
-    
+
     def test_base(self):
         """
         check if base id no args

@@ -5,14 +5,40 @@ Test for rectangle.py
 
 import unittest
 
+import pycodestyle
+
 from models.base import Base
 
 from models.rectangle import Rectangle
 
+
 class test_case(unittest.TestCase):
     """Test for rectangle.py"""
 
+    def test_pep8(self):
+        """
+        Test that checks PEP8
+        """
+        syntax = pycodestyle.StyleGuide(quit=True)
+        check = syntax.check_files(['models/rectangle.py'])
+        self.assertEqual(
+            check.total_errors, 0,
+            "Pycodestyle errors found in rectangle.py"
+        )
+
+    def test_pep8_base(self):
+        """
+        Test that checks PEP8
+        """
+        syntax = pycodestyle.StyleGuide(quit=True)
+        check = syntax.check_files(['tests/test_models/test_rectangle.py'])
+        self.assertEqual(
+            check.total_errors, 0,
+            "Pycodestyle errors found in test_rectangle.py"
+        )
+
     def setUp(self):
+        """def base setup"""
         Base._Base__nb_objects = 0
 
     def test_id(self):
@@ -45,8 +71,8 @@ class test_case(unittest.TestCase):
         with self.assertRaises(TypeError) as x:
             r0 = Rectangle(5)
         self.assertEqual(
-                "__init__() missing 1 required positional argument: 'height'", str(
-                    x.exception))
+                "__init__() missing 1 required positional argument: 'height'",
+                str(x.exception))
         _str = ("__init__() missing 2 required positional" +
                 " arguments: 'width' and 'height'")
         with self.assertRaises(TypeError) as x:
@@ -156,7 +182,6 @@ class test_case(unittest.TestCase):
 
     def test_dictionary(self):
         """check for dictionary"""
-
         r1 = Rectangle(10, 2, 1, 9)
         r1_dictionary = r1.to_dictionary()
         r_dictionary = {'x': 1, 'y': 9, 'id': 1, 'height': 2, 'width': 10}
