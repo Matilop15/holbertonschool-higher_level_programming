@@ -89,11 +89,17 @@ class test_case(unittest.TestCase):
     def test_attributes(self):
         """check for atributes"""
         with self.assertRaises(TypeError) as x:
+            Rectangle(None, 2)
+        self.assertEqual("width must be an integer", str(x.exception))
+
+        with self.assertRaises(TypeError) as x:
             Rectangle("Hello", 2)
         self.assertEqual("width must be an integer", str(x.exception))
+
         with self.assertRaises(TypeError) as x:
             Rectangle(2, "World")
         self.assertEqual("height must be an integer", str(x.exception))
+
         with self.assertRaises(TypeError) as x:
             Rectangle(1, 2, "Holbie", 3)
         self.assertEqual("x must be an integer", str(x.exception))
