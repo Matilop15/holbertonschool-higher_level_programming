@@ -107,3 +107,58 @@ class test_case(unittest.TestCase):
         self.assertEqual(
                 "area() takes 1 positional argument but 2 were given", str(
                     x.exception))
+
+    def test_update(self):
+        """check update"""
+        r1 = Rectangle(10, 10, 10, 10)
+        r1.update(89, 2, 3, 4, 5)
+        self.assertEqual(r1.id, 89)
+        self.assertEqual(r1.width, 2)
+        self.assertEqual(r1.height, 3)
+        self.assertEqual(r1.x, 4)
+        self.assertEqual(r1.y, 5)
+        r1.update()
+        self.assertEqual(str(r1), "[Rectangle] (89) 4/5 - 2/3")
+
+    def test_update_errors(self):
+        """check for update errors"""
+        r1 = Rectangle(10, 10, 10, 10)
+        with self.assertRaises(TypeError) as x:
+            r1.update("Holbie")
+        self.assertEqual("id must be an integer", str(x.exception))
+
+        with self.assertRaises(TypeError) as x:
+            r1.update(65, 89, "holbie")
+        self.assertEqual("height must be an integer", str(x.exception))
+
+    def test_update2(self):
+        """check update with kwargs"""
+        r1 = Rectangle(10, 10, 10, 10)
+        r1.update(height=1)
+        self.assertEqual(r1.height, 1)
+
+        r1.update(x=1, height=2, y=3, width=4)
+        self.assertEqual(r1.y, 3)
+        self.assertEqual(r1.width, 4)
+        self.assertEqual(r1.x, 1)
+        self.assertEqual(r1.height, 2)
+
+    def test_update2_errors(self):
+        """check for update2 errors"""
+        r1 = Rectangle(10, 10, 10, 10)
+        with self.assertRaises(TypeError) as x:
+            r1.update(id='Holbie')
+        self.assertEqual("id must be an integer", str(x.exception))
+
+        with self.assertRaises(TypeError) as x:
+            r1.update(height=65, x=2, width="hola")
+        self.assertEqual("width must be an integer", str(x.exception))
+
+    def test_dictionary(self):
+        """check for dictionary"""
+
+        r1 = Rectangle(10, 2, 1, 9)
+        r1_dictionary = r1.to_dictionary()
+        r_dictionary = {'x': 1, 'y': 9, 'id': 1, 'height': 2, 'width': 10}
+        self.assertEqual(len(r1_dictionary), len(r_dictionary))
+        self.assertEqual(type(r1_dictionary), dict)
