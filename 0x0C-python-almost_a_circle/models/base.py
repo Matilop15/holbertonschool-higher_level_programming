@@ -9,6 +9,7 @@ import json
 
 from os import path
 
+
 class Base:
     """
     base de todo
