@@ -7,6 +7,12 @@ import unittest
 
 import pycodestyle
 
+import os
+
+from models.rectangle import Rectangle
+
+from models.square import Square
+
 from models.base import Base
 
 
@@ -208,15 +214,3 @@ class test_case(unittest.TestCase):
             Rectangle.load_from_file('Monty Python')
 
         self.assertEqual(warn, str(msg.exception))
-
-    def test_create(self):
-        """
-        Test for create method
-        """
-        with self.assertRaises(TypeError) as msg:
-            warn = Rectangle.create('Monty Python')
-
-        self.assertEqual(
-            "create() takes 1 positional argument but 2 were given",
-            str(msg.exception)
-        )
