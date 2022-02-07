@@ -51,11 +51,6 @@ class test_case(unittest.TestCase):
         b1 = Base(None)
         self.assertEqual(b1.id, 1)
 
-    def test_decimal(self):
-        """test for id = decimal"""
-        b1 = Base(1.3)
-        self.assertEqual(b1.id, 1.3)
-
     def test_baseNone(self):
         """
         check if base id is None
@@ -72,6 +67,13 @@ class test_case(unittest.TestCase):
         """
         b1 = Base(12)
         self.assertEqual(b1.id, 12)
+
+    def test_doble_base(self):
+        """pased two vvalores"""
+        b1 = Base(13)
+        self.assertEqual(b1.id, 13)
+        b1 = Base(42)
+        self.assertEqual(b1.id, 42)
 
     def test_id_inc(self):
         """
@@ -103,8 +105,8 @@ class test_case(unittest.TestCase):
         """
         check base id str
         """
-        b1 = Base('hola')
-        self.assertEqual(b1.id, 'hola')
+        b1 = Base("hola")
+        self.assertEqual(b1.id, "hola")
 
     def test_id_float(self):
         """
