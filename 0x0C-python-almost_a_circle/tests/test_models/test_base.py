@@ -44,6 +44,31 @@ class test_case(unittest.TestCase):
     def setUp(self):
         Base._Base__nb_objects = 0
 
+    def test_list(self):
+        """check if id is a list"""
+        b1 = Base([1, 2, 3])
+        self.assertEqual(b1.id, [1, 2, 3])
+
+    def test_tuple(self):
+        """check if id is a tuple"""
+        b1 = Base((1, 3, 4))
+        self.assertEqual(b1.id, (1, 3, 4))
+
+    def test_NaN(self):
+        """check if id is NaN"""
+        b1 = Base(float('NaN'))
+        self.assertNotEqual(b1.id, float('NaN'))
+
+    def test_twoargs(self):
+        """check if id have 2 args"""
+        with self.assertRaises(TypeError):
+            Base(1, 4)
+
+    def test_dict(self):
+        """"check if id is dictionary"""
+        b1 = Base({"Holbie": 11, "school": 24})
+        self.assertEqual(b1.id, {"Holbie": 11, "school": 24})
+
     def test_base(self):
         """
         check if base id no args
