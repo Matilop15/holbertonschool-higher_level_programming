@@ -51,12 +51,20 @@ class test_case(unittest.TestCase):
         b1 = Base(None)
         self.assertEqual(b1.id, 1)
 
+    def test_decimal(self):
+        """test for id = decimal"""
+        b1 = Base(1.3)
+        self.assertEqual(b1.id, 1.3)
+
     def test_baseNone(self):
         """
         check if base id is None
         """
         Base._Base__nb_objects = 0
-        self.assertEqual(Base().id, 1)
+        b1 = Base()
+        self.assertEqual(b1.id, 1)
+        b1 = Base(None)
+        self.assertEqual(b1.id, 2)
 
     def test_base_12(self):
         """
