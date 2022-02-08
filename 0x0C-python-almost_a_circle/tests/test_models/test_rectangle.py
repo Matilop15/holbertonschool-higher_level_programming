@@ -46,8 +46,14 @@ class test_case(unittest.TestCase):
         res = Rectangle(10, 2)
         self.assertEqual(res.id, 1)
 
+    def test_width_float(self):
+        """width is a float"""
+        Base._Base__nb_objects = 0
+        with self.assertRaises(TypeError):
+            r3 = Rectangle(4.36, 3, 5, 4)
+
     def test_id2(self):
-        """check multipl call di"""
+        """check multipl call id"""
         res = Rectangle(10, 2)
         res2 = Rectangle(2, 4, 0, 0, 12)
         res3 = Rectangle(2, 4)
