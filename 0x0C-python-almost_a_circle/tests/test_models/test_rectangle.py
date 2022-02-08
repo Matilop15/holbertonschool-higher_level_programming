@@ -66,6 +66,22 @@ class test_case(unittest.TestCase):
         self.assertEqual(r2.x, 4)
         self.assertEqual(r2.y, 5)
 
+    def test_private_x(self):
+        """x is a private attribute"""
+        self.assertFalse(hasattr(Rectangle, "__x"))
+
+    def test_private_y(self):
+        """y is a private attribute"""
+        self.assertFalse(hasattr(Rectangle, "__y"))
+
+    def test_private_height(self):
+        """height is private attribute"""
+        self.assertFalse(hasattr(Rectangle, "__height"))
+
+    def test_private_widht(self):
+        """width is a private attribute"""
+        self.assertFalse(hasattr(Rectangle, "__width"))
+
     def test_errors(self):
         """check differents errors"""
         with self.assertRaises(TypeError) as x:
