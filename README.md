@@ -45,4 +45,4 @@ or
 - [0x0C-python-almost_a_circle](https://github.com/Matilop15/holbertonschool-higher_level_programming/tree/master/0x0C-python-almost_a_circle)
 
 ## Author
-Matias López - [Linkedin: @Matias López](https://uy.linkedin.com/in/matias-l%C3%B3pez-777796194?trk=people-guest_people_search-card)
+[Linkedin: @Matias López](https://uy.linkedin.com/in/matias-l%C3%B3pez-777796194?trk=people-guest_people_search-card)
