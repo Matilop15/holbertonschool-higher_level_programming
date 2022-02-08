@@ -50,7 +50,19 @@ class test_case(unittest.TestCase):
         """width is a float"""
         Base._Base__nb_objects = 0
         with self.assertRaises(TypeError):
-            r3 = Rectangle(4.36, 3, 5, 4)
+            Rectangle(4.36, 3, 5, 4)
+
+    def test_width_Nan(self):
+        """width is Nan"""
+        Base._Base__nb_objects = 0
+        with self.assertRaises(TypeError):
+            Rectangle(float('NaN'), 7, 4, 8)
+
+    def test_height_NaN(self):
+        """height inf"""
+        Base._Base__nb_objects = 0
+        with self.assertRaises(TypeError):
+            Rectangle(1, float('NaN'), 3, 6)
 
     def test_id2(self):
         """check multipl call id"""
@@ -184,6 +196,18 @@ class test_case(unittest.TestCase):
         with self.assertRaises(TypeError) as x:
             r1.update(65, 89, "holbie")
         self.assertEqual("height must be an integer", str(x.exception))
+
+    def test_height_inf(self):
+        """height is inf"""
+        Base._Base__nb_objects = 0
+        with self.assertRaises(TypeError):
+            Rectangle(1, float('inf'), 4, 3)
+
+    def test_width_inf(self):
+        """width is inf"""
+        Base._Base__nb_objects = 0
+        with self.assertRaises(TypeError):
+            Rectangle(float('inf'), 2, 3, 5)
 
     def test_update2(self):
         """check update with kwargs"""
