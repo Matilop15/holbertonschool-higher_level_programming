@@ -76,6 +76,10 @@ class test_case(unittest.TestCase):
         b1 = Base(None)
         self.assertEqual(b1.id, 1)
 
+    def test_docum(self):
+        """test for documentation"""
+        self.assertTrue(len(Base.__doc__) > 0)
+
     def test_baseNone(self):
         """
         check if base id is None
