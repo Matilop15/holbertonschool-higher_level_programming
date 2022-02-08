@@ -41,6 +41,18 @@ class TestSquare(unittest.TestCase):
             "Pycodestyle errors found in test_square.py"
         )
 
+    def test_size(self):
+        """size of square"""
+        Base._Base__nb_objects = 0
+        r1 = Square(3)
+        self.assertEqual(r1.size, 3)
+
+    def test_size_0(self):
+        """size is zero"""
+        with self.assertRaises(ValueError) as x:
+            r1 = Square(0)
+        self.assertEqual(str(x.exception), "width must be > 0")
+
     def test_getter(self):
         r1 = Square(5)
         self.assertEqual(r1.size, 5)
