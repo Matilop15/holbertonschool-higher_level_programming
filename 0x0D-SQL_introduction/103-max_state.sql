@@ -1,4 +1,4 @@
---display the max temperature from state
+-- display the max temperature from state
 SELECT state, MAX(value) as max_temp
 FROM temperatures
-GROUP BY state ORDER BY state ASC;
+GROUP BY state ORDER BY state;
