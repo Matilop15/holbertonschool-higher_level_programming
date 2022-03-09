@@ -28,10 +28,19 @@ git clone https://github.com/Matilop15/holbertonschool-higher_level_programming/
 
 ## Usage
 ```
-mysql <filename.sql>
+cat <filename.sql> | mysql -hlocalhost -uroot -p
 ```
-
 ## Files
-
+- [0-privileges.sql](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0E-SQL_more_queries/0-privileges.sql)
+- [1-create_user.sql](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0E-SQL_more_queries/1-create_user.sql)
+- [2-create_read_user.sql](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0E-SQL_more_queries/2-create_read_user.sql)
+- [3-force_name.sql](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0E-SQL_more_queries/3-force_name.sql)
+- [4-never_empty.sql](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0E-SQL_more_queries/4-never_empty.sql)
+- [5-unique_id.sql](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0E-SQL_more_queries/5-unique_id.sql)
+- [6-states.sql](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0E-SQL_more_queries/6-states.sql)
+- [7-cities.sql](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0E-SQL_more_queries/7-cities.sql)
+- [8-cities_of_california_subquery.sql](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0E-SQL_more_queries/8-cities_of_california_subquery.sql)
+- [9-cities_by_state_join.sql](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x0E-SQL_more_queries/9-cities_by_state_join.sql)
+- []() 
 ## Author
 Matias López - [Linkedin: @Matias López](https://uy.linkedin.com/in/matias-l%C3%B3pez-777796194?trk=people-guest_people_search-card)
