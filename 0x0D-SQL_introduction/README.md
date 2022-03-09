@@ -1,6 +1,9 @@
 <img src="https://blog.holbertonschool.com/wp-content/uploads/2020/04/unnamed-2.png" width="170" height="210">
 
 # Higher-level programming ― MySQL
+## Lenguage
+<img src="https://img.icons8.com/ios-filled/50/000000/mysql-logo.png"/>
+
 ## 0x0D-SQL_introduction
 
 ## Purpose
