@@ -2,6 +2,7 @@
 
 # Higher-level programming ― MySQL
 ## 0x0E-SQL_more_queries
+<a href="https://icons8.com/icon/39855/mysql-logo">MySQL Logo icon by Icons8</a>
 
 ## Purpose
 ### Lear about:
