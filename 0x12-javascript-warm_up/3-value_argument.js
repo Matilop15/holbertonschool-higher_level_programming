@@ -1,5 +1,4 @@
 #!/usr/bin/code
-
 if (typeof process.argv[2] !== 'undefined') {
   console.log(process.argv[2]);
 } else {
