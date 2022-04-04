@@ -5,11 +5,11 @@
 const num = parseInt(process.argv[2]);
 
 if (Number.isNaN(num)) {
-	  console.log('Missing size');
+  console.log('Missing size');
 } else {
   let i = 0;
   while (i < num) {
-  console.log('X'.repeat(num));
-  i++;
- }
+    console.log('X'.repeat(num));
+    i++;
+  }
 }
