@@ -14,10 +14,10 @@ class Rectangle {
     }
   }
 
-  print () {
+  print (ch = 'X') {
     let row = '';
     for (let count = 0; count < this.width; count++) {
-      row += 'X';
+      row += ch;
     }
     for (let i = 0; i < this.height; i++) {
       console.log(row);
