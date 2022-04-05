@@ -37,7 +37,7 @@ git clone https://github.com/Matilop15/holbertonschool-higher_level_programming/
 - [8-square.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/8-square.js) - Write a script that prints a square
 - [9-add.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/9-add.js) - Write a script that prints the addition of 2 integers
 - [10-factorial.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/10-factorial.js) - Write a script that computes and prints a factorial
--[11-second_biggest.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/11-second_biggest.js) - Write a script that searches the second biggest integer in the list of arguments
+- [11-second_biggest.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/11-second_biggest.js) - Write a script that searches the second biggest integer in the list of arguments
 - [12-object.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/12-object.js) - Update this script to replace the value 12 with 89
 - [13-add.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/13-add.js) - Write a function that returns the addition of 2 integers
 - [100-let_me_const.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/100-let_me_const.js) - Write a file that modifies the value of myVar to 333
