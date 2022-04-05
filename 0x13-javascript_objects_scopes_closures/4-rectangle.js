@@ -25,16 +25,17 @@ class Rectangle {
   }
 
   double () {
-    let newWidth = this.width * 2;
-    let newHeight = this.height * 2;
+    const newWidth = this.width * 2;
+    const newHeight = this.height * 2;
     this.width = newWidth;
     this.height = newHeight;
   }
+
   rotate () {
-    let rotWidth = this.height;
-    let rotheight = this.width;
+    const rotWidth = this.height;
+    const rotHeight = this.width;
     this.width = rotWidth;
-    this.height = rotheight;
+    this.height = rotHeight;
   }
 }
 
