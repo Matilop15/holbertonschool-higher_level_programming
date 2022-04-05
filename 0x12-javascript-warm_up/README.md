@@ -26,7 +26,7 @@ git clone https://github.com/Matilop15/holbertonschool-higher_level_programming/
 
 ## Files
 
-- [0-javascript_is_amazing.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/0-javascript_is_amazing.js)
+- [0-javascript_is_amazing.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/0-javascript_is_amazing.js) - Write a script that prints “JavaScript is amazing
 - [1-multi_languages.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/1-multi_languages.js)
 - [2-arguments.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/2-arguments.js)
 - [3-value_argument.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/3-value_argument.js)
