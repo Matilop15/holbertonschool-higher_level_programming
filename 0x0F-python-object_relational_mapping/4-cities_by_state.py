@@ -16,8 +16,8 @@ if __name__ == "__main__":
 
     curs = server.cursor()
 
-    curs.execute("SELECT c.id, c.name, s.name FROM cities c LEFT JOIN states s ON \
-			c.state_id = s.id ")
+    curs.execute("SELECT c.id, c.name, s.name FROM cities c LEFT JOIN states\
+                    s ON c.state_id = s.id ")
 
     column = curs.fetchall()
 
