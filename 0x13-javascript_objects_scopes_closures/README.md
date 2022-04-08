@@ -25,6 +25,18 @@ git clone https://github.com/Matilop15/holbertonschool-higher_level_programming/
 ```
 
 ## Files
+- [0-rectangle.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x13-javascript_objects_scopes_closures/0-rectangle.js)
+- [1-rectangle.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x13-javascript_objects_scopes_closures/1-rectangle.js)
+- [2-rectangle.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x13-javascript_objects_scopes_closures/2-rectangle.js)
+- [3-rectangle.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x13-javascript_objects_scopes_closures/3-rectangle.js)
+- [4-rectangle.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x13-javascript_objects_scopes_closures/4-rectangle.js)
+- [5-square.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x13-javascript_objects_scopes_closures/5-square.js)
+- [6-square.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x13-javascript_objects_scopes_closures/6-square.js)
+- [7-occurrences.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x13-javascript_objects_scopes_closures/7-occurrences.js)
+- [8-esrever.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x13-javascript_objects_scopes_closures/8-esrever.js)
+- [9-logme.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x13-javascript_objects_scopes_closures/9-logme.js)
+- [10-converter.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x13-javascript_objects_scopes_closures/10-converter.js)
+- [100-map.js](https://github.com/Matilop15/holbertonschool-higher_level_programming/blob/master/0x13-javascript_objects_scopes_closures/100-map.js)
 
 
 ## Author
