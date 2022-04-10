@@ -22,7 +22,8 @@ if __name__ == "__main__":
                         ON c.state_id=s.id ORDER BY s.id")
 
     column = curs.fetchall()
-
+    
+    newList = []
     for row in column:
         if row[2] == sys.argv[4]:
             newList.append(row[1])
