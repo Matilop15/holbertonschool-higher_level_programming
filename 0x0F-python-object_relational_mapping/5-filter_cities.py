@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     curs = server.cursor()
 
-    curs.execute("SELECT c.name, s.name c.id FROM cities AS c\
+    curs.execute("SELECT c.id, c.name s.name FROM cities AS c\
                         JOIN states AS s\
                         ON c.state_id=s.id ORDER BY s.id")
 
