@@ -17,18 +17,12 @@ if __name__ == "__main__":
 
     curs = server.cursor()
 
-    curs.execute("SELECT c.id, c.name s.name FROM cities AS c\
-                        JOIN states AS s\
-                        ON c.state_id=s.id ORDER BY s.id")
+    curs.execute("SELECT * FROM cities JOIN states\
+                        ON cities.state_id = states.id ORDER BY cities.id")
 
     column = curs.fetchall()
     
-    newList = []
-    for row in column:
-        if row[2] == sys.argv[4]:
-            newList.append(row[1])
-
-    print(', '.join(newList))
+    [print(", ".join([c[2] for c in cur.fetchall() if c[4] == sys.argv[4]]))]
 
     curs.close()
     server.close()
