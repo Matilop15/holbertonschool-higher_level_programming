@@ -16,12 +16,13 @@ if __name__ == "__main__":
 
     """cursor sirve para ejecutar codigo SQL"""
     curs = server.cursor()
-    curs.execute("SELECT * FROM states WHERE (name LIKE 'N%') ORDER BY id ASC")
+    curs.execute("SELECT * FROM states ORDER BY id ASC")
 
     column = curs.fetchall()
 
     for row in column:
-        print(row)
+        if row[1][0] == 'N':
+            print(row)
 
     curs.close()
     server.close()
