@@ -22,7 +22,8 @@ if __name__ == "__main__":
     column = curs.fetchall()
 
     for row in column:
-        print(row)
+        if row[1] == sys.argv[4]:
+            print(row)
 
     curs.close()
     server.close()
