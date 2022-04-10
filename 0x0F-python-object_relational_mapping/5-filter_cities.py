@@ -17,8 +17,9 @@ if __name__ == "__main__":
 
     curs = server.cursor()
 
-    curs.execute("SELECT c.name, s.name FROM cities c INNER JOIN states s ON \
-                    c.state_id = s.id ORDER BY c.id")
+    curs.execute("SELECT c.name, s.name c.id FROM cities AS c\
+                        JOIN states AS s\
+                        ON c.state_id=s.id ORDER BY s.id")
 
     column = curs.fetchall()
 
