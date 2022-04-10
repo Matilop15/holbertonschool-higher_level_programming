@@ -24,7 +24,10 @@ if __name__ == "__main__":
     column = curs.fetchall()
 
     for row in column:
-        print(row)
+        if row[2] == sys.argv[4]:
+            newList.append(row[1])
+
+    print(', '.join(newList))
 
     curs.close()
     server.close()
