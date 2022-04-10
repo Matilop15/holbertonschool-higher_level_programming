@@ -16,8 +16,7 @@ if __name__ == "__main__":
 
     curs = server.cursor()
 
-    curs.execute("SELECT * FROM states WHERE name = '{}' ".format(sys.argv[4])
-                 + "ORDER BY id ASC")
+    curs.execute("SELECT * FROM states WHERE name = '{}'".format(sys.argv[4]))
 
     column = curs.fetchall()
 
