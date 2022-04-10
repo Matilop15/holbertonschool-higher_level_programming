@@ -20,9 +20,7 @@ if __name__ == "__main__":
     curs.execute("SELECT * FROM cities JOIN states\
                         ON cities.state_id = states.id ORDER BY cities.id")
 
-    column = curs.fetchall()
-    
-    [print(", ".join([c[2] for c in cur.fetchall() if c[4] == sys.argv[4]]))]
+    [print(", ".join([c[2] for c in curs.fetchall() if c[4] == sys.argv[4]]))]
 
     curs.close()
     server.close()
