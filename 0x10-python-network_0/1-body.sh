@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # display the body of the response
 curl -ls "$1"
