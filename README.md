@@ -2,20 +2,20 @@
 
 # Higher-level programming ― Python
 
-## Purpose
+## Purpose 🤩
 
 - Learn python from a holbertonian perspective
 
 ##Coding style
 - All python files are interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3) and use the [PEP 8 style (version 1.7.*)](https://github.com/PyC\QA/pycodestyle) for checking coding style
 
-## Installation
+## Installation 💻
 To use, first download  this repository into your local machine by issuing the following command in your local terminal. 
 ```
 git clone https://github.com/Matilop15/holbertonschool-higher_level_programming.git
 ```
 
-#### Change Directory
+#### Change Directory 📁
 ```
 cd holbertonschool-higher_level_programming
 ```
@@ -28,7 +28,7 @@ or
 ```
 ./<filename.py>
 ```
-### Directores
+### Directores 🗂
 
 - [0x00-python-hello_world](https://github.com/Matilop15/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world)
 - [0x01-python-if_else_loops_functions](https://github.com/Matilop15/holbertonschool-higher_level_programming/tree/master/0x01-python-if_else_loops_functions)
@@ -45,5 +45,5 @@ or
 - [0x0C-python-almost_a_circle](https://github.com/Matilop15/holbertonschool-higher_level_programming/tree/master/0x0C-python-almost_a_circle)
 - [0x0D-SQL_introduction](https://github.com/Matilop15/holbertonschool-higher_level_programming/tree/master/0x0D-SQL_introduction)
 
-## Author
+## Author 👨‍💻
 [Linkedin: @Matias López](https://uy.linkedin.com/in/matias-l%C3%B3pez-777796194?trk=people-guest_people_search-card)
