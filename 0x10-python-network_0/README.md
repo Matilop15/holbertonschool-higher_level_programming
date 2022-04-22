@@ -1,6 +1,10 @@
-rc="https://blog.holbertonschool.com/wp-content/uploads/2020/04/unnamed-2.png" width="170" height="210">
+src="https://blog.holbertonschool.com/wp-content/uploads/2020/04/unnamed-2.png" width="170" height="210">
 
 # Holbertonschool-higher_level_programming
+
+## Purpose 🤩
+
+
 
 ## Installation 💻
 To use, first download  this repository into your local machine by issuing the following command in your local terminal. 
@@ -18,7 +22,7 @@ cd 0x10-python-network_0
 ./<filename.sh> localhost:port (5000)
 ```
 
-## Files
+## Files 📄 
 - []()
 
 ## Author 👨‍💻
