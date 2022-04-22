@@ -20,7 +20,7 @@ git clone https://github.com/Matilop15/holbertonschool-higher_level_programming.
 cd 0x09-python-everything_is_object
 ```
 
-## Usage
+## Usage 💫
 ```
 python3 <filename.py>
 ```
