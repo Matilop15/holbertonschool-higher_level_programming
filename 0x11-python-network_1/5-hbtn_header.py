@@ -8,9 +8,6 @@ import sys
 
 
 if __name__ = "__main__":
-    try:
-        with requests.get(sys.argv[1])
-            if resp is not None:
-                print(resp.header.get('X-Request-Id'))
-    except Exception:
-        pass
+    resp = requests.get(sys.argv[1])
+        if resp is not None:
+            print(resp.header.get('X-Request-Id'))
