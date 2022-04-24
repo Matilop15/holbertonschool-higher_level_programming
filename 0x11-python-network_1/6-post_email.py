@@ -10,6 +10,6 @@ import sys
 
 
 if __name__ == "__main__":
-    Email = {'email': argv[2]}
-    resp = requests.post(argv[1], Email)
+    eemail = {'email': argv[2]}
+    resp = requests.post(argv[1], eemail)
     print("{}".format(resp.text))
