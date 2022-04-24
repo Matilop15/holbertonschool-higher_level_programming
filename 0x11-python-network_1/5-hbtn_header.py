@@ -10,4 +10,4 @@ import sys
 if __name__ == "__main__":
     resp = requests.get(sys.argv[1])
     if resp is not None:
-        print(resp.header.get('X-Request-Id'))
+        print(resp.headers.get('X-Request-Id'))
