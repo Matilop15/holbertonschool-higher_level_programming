@@ -12,5 +12,4 @@ import sys
 if __name__ == "__main__":
     Email = {'email': argv[2]}
     resp = requests.post(argv[1], Email)
-    if resp is not None:
-        print("{}".format(resp.text))
+    print("{}".format(resp.text))
