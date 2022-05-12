@@ -45,11 +45,11 @@ or
 ./<filename.py>
 ```
 
-## Files
+## Files 📄
 - [0-select_states.py]()
 - [1-filter_states.py]()
 
-## Author
-Matias López - [Linkedin: @Matias López](https://uy.linkedin.com/in/matias-l%C3%B3pez-777796194?trk=people-guest_people_search-card)
+## Author 👨‍💻
+[Linkedin: @Matias López](https://uy.linkedin.com/in/matias-l%C3%B3pez-777796194?trk=people-guest_people_search-card)
 
 
