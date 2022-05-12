@@ -6,7 +6,7 @@
 
 - Learn python from a holbertonian perspective
 
-##Coding style
+## Coding style
 - All python files are interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3) and use the [PEP 8 style (version 1.7.*)](https://github.com/PyC\QA/pycodestyle) for checking coding style
 
 ## Installation 💻
