@@ -8,13 +8,14 @@
 const axios = require('axios');
 if (!process.argv[2])
   process.exit();
+
 const url = process.argv[2];
 let count = 0;
 
 axios.get(url)
   .then(function (response) {
     const resp = response.data.results;
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < resp.length; i++) {
       if (resp[i].characters.includes('https://swapi-api.hbtn.io/api/people/18/')) {
         count++;
       }
