@@ -8,7 +8,7 @@ axios.get(url)
     const rute = response.data.films;
     const leng = rute.length;
     console.log(leng);
-  });
-  .catch (function (err) {
+  })
+  .catch(function (err) {
     console.log(err);
   });
