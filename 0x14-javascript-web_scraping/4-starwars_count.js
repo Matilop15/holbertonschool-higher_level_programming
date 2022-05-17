@@ -6,6 +6,8 @@
 */
 
 const axios = require('axios');
+if (!process.argv[2])
+  process.exit();
 const url = process.argv[2];
 let count = 0;
 
