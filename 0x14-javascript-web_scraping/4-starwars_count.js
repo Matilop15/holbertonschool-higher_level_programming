@@ -9,17 +9,21 @@ const axios = require('request');
 const url = process.argv[2];
 let count = 0;
 
-axios(url, function (response, body) {
-  const jsoon = JSON.parse(body);
-  const res = jsoon.results;
-  for (let i = 0; i < res.length; i++) {
-    if (res[i].characters) {
-      for (const line of res[i].characters) {
-        if (line.includes('18')) {
-          count++;
+axios(url, function (err, response, body) {
+  if (!err) {
+    const jsoon = JSON.parse(body);
+    const res = jsoon.results;
+    for (let i = 0; i < res.length; i++) {
+      if (res[i].characters) {
+        for (const line of res[i].characters) {
+          if (line.includes('18')) {
+            count++;
+          }
         }
       }
     }
+    console.log(count);
+  } else {
+    console.log(err);
   }
-  console.log(count);
 });
