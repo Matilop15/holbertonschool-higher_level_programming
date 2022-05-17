@@ -9,3 +9,6 @@ axios.get(url)
     const leng = rute.length;
     console.log(leng);
   });
+  .catch (function (err) {
+    console.log(err);
+  });
