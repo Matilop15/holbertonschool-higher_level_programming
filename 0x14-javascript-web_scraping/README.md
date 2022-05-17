@@ -118,4 +118,4 @@ Write a script that computes the number of tasks completed by user id.
 ```
 
 ## Author
-- [Linkedin: Matias López](https://uy.linkedin.com/in/matias-l%C3%B3pez-777796194?trk=people-guest_people_search-card)
+- [Matias López](https://uy.linkedin.com/in/matias-l%C3%B3pez-777796194?trk=people-guest_people_search-card)
