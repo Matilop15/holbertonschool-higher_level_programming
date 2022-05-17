@@ -9,8 +9,8 @@ const url = 'https://swapi-api.hbtn.io/api/films/' + (process.argv[2]);
 
 axios.get(url)
   .then(function (response) {
-	      console.log(response.data.title);
-	    })
+    console.log(response.data.title);
+  })
   .catch(function (err) {
-	      console.log(err.response.status);
-	    });
+    console.log(err.response.status);
+  });
