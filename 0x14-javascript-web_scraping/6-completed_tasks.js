@@ -15,18 +15,18 @@ axios.get(url)
     for (const num in response.data) {
       globalThis.userid = response.data[num].userId;
       const task = response.data[num].completed;
-      if (dict[userid] >= 1) {
-        cantidad = dict[userid];
+      if (dict[this.userid] >= 1) {
+        cantidad = dict[this.userid];
       } else {
         cantidad = 0;
       }
       if (task) {
         cantidad += 1;
       }
-      dict[userid] = cantidad;
+      dict[this.userid] = cantidad;
     }
-    if (dict[userid] == 0) {
-      delete dict[userid];
+    if (dict[this.userid] === 0) {
+      delete dict[this.userid];
     }
     console.log(dict);
   })
