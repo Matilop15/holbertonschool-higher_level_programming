@@ -26,4 +26,7 @@ axios.get(url)
       dict[userid] = cantidad;
     }
     console.log(dict);
+  })
+  .catch(function (err) {
+    console.error(err);
   });
