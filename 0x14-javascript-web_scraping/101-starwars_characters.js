@@ -9,14 +9,15 @@ const axios = require('axios');
 const url = ('https://swapi-api.hbtn.io/api/films/');
 const film = process.argv[2];
 
-axios.get(url + film)
-  .then(function (response) {
-    const urlName = response.data.characters;
-    for (let i = 0; i < urlName.length; i++) {
-      const people = urlName[i];
-      axios.get(people)
-        .then(function (response) {
-          console.log(response.data.name);
-        });
-    }
-  });
+async function savemovies () {
+  const responses = await axios.get(url + film);
+  const urlName = responses.data.characters;
+  for (let i = 0; i < urlName.length; i++) {
+    const people = urlName[i];
+    await axios.get(people)
+      .then(function (response) {
+        console.log(response.data.name);
+      });
+  }
+}
+savemovies();
