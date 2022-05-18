@@ -13,7 +13,7 @@ const dict = {};
 axios.get(url)
   .then(function (response) {
     for (const num in response.data) {
-      const userid = response.data[num].userId;
+      globalThis.userid = response.data[num].userId;
       const task = response.data[num].completed;
       if (dict[userid] >= 1) {
         cantidad = dict[userid];
@@ -24,6 +24,9 @@ axios.get(url)
         cantidad += 1;
       }
       dict[userid] = cantidad;
+    }
+    if (dict[userid] == 0) {
+      delete dict[userid];
     }
     console.log(dict);
   })
