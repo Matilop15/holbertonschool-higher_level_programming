@@ -15,10 +15,12 @@ axios.get(url)
     for (const num in response.data) {
       const userid = response.data[num].userId;
       const task = response.data[num].completed;
-      if (num !== 0 && dict[userid] >= 1) {
-        cantidad = dict[userid];
-      } else {
-        cantidad = 0;
+      if (num !== 0) {
+	if (dict[userid] >= 1) {
+          cantidad = dict[userid];
+        } else {
+          cantidad = 0;
+        }
       }
       if (userid && task) {
         cantidad += 1;
