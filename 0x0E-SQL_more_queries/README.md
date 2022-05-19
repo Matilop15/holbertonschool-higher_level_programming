@@ -2,7 +2,7 @@
 
 # Higher-level programming ― MySQL
 ## Lenguage
-<img src="https://img.icons8.com/ios-filled/50/000000/mysql-logo.png"/>
+<img src="https://img.icons8.com/ios-filled/100/000000/mysql-logo.png"/>
 
 ## 0x0E-SQL_more_queries
 
