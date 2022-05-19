@@ -5,7 +5,7 @@
 ## 0x14-javascript-web_scraping
 
 ## Lenguage
-<img src="https://img.icons8.com/color/100/000000/javascript--v1.png"/>
+<img src="https://img.icons8.com/color/100/000000/javascript--v1.png"/> <img src="https://img.icons8.com/color/100/000000/nodejs.png"/>
 
 ## Learn Objetives
 - Why JavaScript programming is amazing
