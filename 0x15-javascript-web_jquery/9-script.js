@@ -3,6 +3,8 @@ Write a JavaScript script that fetches from URL
 https://fourtonfish.com/hellosalut/?lang=fr and displays the value of hello
 from that fetch in the HTML tag DIV#hello.
 */
-$.getJSON('https://fourtonfish.com/hellosalut/?lang=fr', function (data) {
+$('document').ready(function () {
+  $.getJSON('https://fourtonfish.com/hellosalut/?lang=fr', function (data) {
     $('DIV#hello').text(data.hello);
-    });
+  });
+});
