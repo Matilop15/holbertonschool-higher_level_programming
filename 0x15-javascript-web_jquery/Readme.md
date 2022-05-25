@@ -64,7 +64,11 @@ $ python -m http.server
 <img src="./openserver.png" width="auto" height="auto">
 
 ## Files and Examples
-[1-script.js](1-script.js)                                                                                          Write a JavaScript script that updates the text color of the <header> element to red (#FF0000)                   File to modify: [1-main.html](1-main.html)
+[1-script.js](1-script.js)
+
+Write a JavaScript script that updates the text color of the <header> element to red (#FF0000)
+
+File to modify: [1-main.html](1-main.html)
 ```
 <!DOCTYPE html>
 <html lang="en">
