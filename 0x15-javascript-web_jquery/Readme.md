@@ -53,10 +53,43 @@ $ cd 0x15-javascript-web_jquery
 ```
 
 ## Usage
+You can start a simple server using the follow python command:
+```
+$ python -m http.server
+```
+- The default port is 8000
+- The default adress is http://0.0.0.0:8000/ 
+- Choose the file you can view
 
+<img src="./openserver.png" width="auto" height="auto">
 
 ## Files and Examples
-
+[1-script.js](1-script.js)                                                                                          Write a JavaScript script that updates the text color of the <header> element to red (#FF0000)                   File to modify: [1-main.html](1-main.html)
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Holberton School</title>
+  </head>
+  <body>
+    <header> 
+      First HTML page
+    </header>
+    <footer>
+      Holberton School - 2017
+    </footer>
+    <script type="text/javascript" src="0-script.js"></script>
+  </body>
+</html
+```
+- [2-script](2-script)
+- [3-script](3-script)
+- [4-script](4-script)
+- [5-script](5-script)
+- [6-script](6-script)
+- [7-script](7-script)
+- [8-script](8-script)
+- [9-script](9-script)
 
 
 ## Author
