@@ -63,6 +63,7 @@ C is super fun!
   path: 'doesntexist' }
 ```
 [1-writeme.js](1-writeme.js)
+
 Write a script that writes a string to a file.
 ```
 0x14-javascript-web_scraping:$ ./1-writeme.js my_file.txt "Python is cool"
@@ -70,6 +71,7 @@ Write a script that writes a string to a file.
 Python is cool
 ```
 [2-statuscode.js](2-statuscode.js)
+
 Write a script that display the status code of a GET request.
 ```
 0x14-javascript-web_scraping:$ ./2-statuscode.js https://intranet.hbtn.io/status
@@ -78,6 +80,7 @@ code: 200
 code: 404
 ```
 [3-starwars_title.js](3-starwars_title.js)
+
 Write a script that prints the title of a Star Wars movie where the episode number matches a given integer.
 ```
 0x14-javascript-web_scraping:$ ./3-starwars_title.js 1
@@ -86,12 +89,14 @@ A New Hope
 Attack of the Clones
 ```
 [4-starwars_count.js](4-starwars_count.js)
+
 Write a script that prints the number of movies where the character “Wedge Antilles” is present.
 ```
 0x14-javascript-web_scraping:$ ./4-starwars_count.js http://swapi.co/api/films
 3
 ```
 [5-request_store.js](5-request_store.js)
+
 Write a script that gets the contents of a webpage and stores it in a file.
 ```
 0x14-javascript-web_scraping:$ ./5-request_store.js http://loripsum.net/api loripsum
@@ -102,6 +107,7 @@ Write a script that gets the contents of a webpage and stores it in a file.
 <p>Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Nos cum te, M. Quem si tenueris, non modo meum Ciceronem, sed etiam me ipsum abducas licebit. Apparet statim, quae sint officia, quae actiones. Ergo instituto veterum, quo etiam Stoici utuntur, hinc capiamus exordium. Eadem nunc mea adversum te oratio est. Quid, si etiam iucunda memoria est praeteritorum malorum? Hoc enim constituto in philosophia constituta sunt omnia. </p>
 ```
 [6-completed_tasks.js](6-completed_tasks.js)
+
 Write a script that computes the number of tasks completed by user id.
 ```
 0x14-javascript-web_scraping:$ ./6-completed_tasks.js https://jsonplaceholder.typicode.com/todos
